@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'burger_api',
     'rest_framework',
-    'corsheaders', ,
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
@@ -124,3 +124,5 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+AUTH_USER_MODEL = "burger_api.UserProfile"
