@@ -13,7 +13,7 @@ class UserProfileViewSet(ModelViewSet):
 class OrderViewSet(ModelViewSet):
     serializer_class = OrderSerializer
     permission_classes = [
-        # IsAuthenticated,
+        IsAuthenticated,
     ]
 
     def get_queryset(self):
